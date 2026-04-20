@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — NimbleLabs</title>
-  <meta name="description" content="NimbleLabs Privacy Policy — how we collect, use, and protect your data." />
+  <title>Privacy Policy — BodyFlo by NimbleLabs</title>
+  <meta name="description" content="BodyFlo Privacy Policy — how we collect, use, and protect your data." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -108,6 +108,7 @@
       line-height: 1.7;
       color: #3B2F8C;
     }
+    .intro-box a { color: var(--brand-dark); }
 
     h2 {
       font-size: 1.25rem;
@@ -134,6 +135,15 @@
       flex-shrink: 0;
     }
 
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
     p {
       font-size: 0.95rem;
       line-height: 1.75;
@@ -155,7 +165,7 @@
     .data-table {
       width: 100%;
       border-collapse: collapse;
-      margin: 20px 0;
+      margin: 16px 0 20px;
       font-size: 0.875rem;
     }
     .data-table th {
@@ -171,12 +181,23 @@
       border: 1px solid var(--border);
       color: #374151;
       vertical-align: top;
-      line-height: 1.55;
+      line-height: 1.6;
     }
     .data-table tr:nth-child(even) td { background: #F9F9FF; }
 
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    .draft-note {
+      margin-top: 48px;
+      background: #FFFBEB;
+      border: 1px solid #FCD34D;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.82rem;
+      color: #92400E;
+      line-height: 1.6;
+    }
 
     footer {
       border-top: 1px solid var(--border);
@@ -195,6 +216,7 @@
 
     @media (max-width: 600px) {
       footer { flex-direction: column; align-items: flex-start; }
+      .data-table { font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -211,127 +233,231 @@
   <div class="page-hero">
     <div class="tag">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: April 19, 2026</p>
+    <p class="updated">Effective date: April 19, 2026 &nbsp;·&nbsp; Last updated: April 19, 2026</p>
   </div>
 
   <div class="content-wrap">
 
     <div class="intro-box">
-      At NimbleLabs, your privacy matters. This Privacy Policy explains what information we collect when you use our mobile app and website, why we collect it, and how we protect it. By using NimbleLabs, you agree to this policy.
+      <strong>Canonical policy (web):</strong> <a href="https://nimblelabs.io/privacy/">nimblelabs.io/privacy</a><br />
+      <strong>Terms of Use:</strong> <a href="https://nimblelabs.io/terms/">nimblelabs.io/terms</a><br />
+      <strong>Operator website:</strong> <a href="https://nimblelabs.io">nimblelabs.io</a>
     </div>
 
-    <h2><span class="num">1</span> Who We Are</h2>
-    <p>NimbleLabs ("we," "our," or "us") operates the NimbleLabs mobile application available on iOS and Android, as well as the website located at <a href="https://nimblelabs.io">nimblelabs.io</a>. For any privacy-related questions, you can reach us at <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a>.</p>
+    <!-- 1 -->
+    <h2><span class="num">1</span> Who we are</h2>
+    <p><strong>BodyFlo</strong> is a mobile application that helps you build, save, and run interval and circuit-style workouts. It is operated by <strong>Nimble Labs LLC</strong>, a California limited liability company ("we," "us," or "our"). All obligations under this Privacy Policy are those of Nimble Labs LLC as a legal entity. No member, manager, officer, employee, or affiliate of Nimble Labs LLC assumes any personal liability under this policy.</p>
+    <p><strong>Data controller:</strong> Nimble Labs LLC (California LLC)<br />
+    <strong>Contact for privacy questions:</strong> <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a><br />
+    <strong>Mailing address:</strong> Available to verified legal or regulatory requests submitted to <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a>. We do not publish a street address publicly; all privacy inquiries must be directed to the email above.</p>
 
-    <h2><span class="num">2</span> Information We Collect</h2>
-    <p>We collect the following categories of information depending on how you use our app:</p>
+    <!-- 2 -->
+    <h2><span class="num">2</span> Scope</h2>
+    <p>This Privacy Policy describes how we collect, use, store, and share information when you use the BodyFlo mobile app (the "App") on iOS or Android. It applies to information we process in connection with the App. Use of the App is also governed by our <a href="https://nimblelabs.io/terms/">Terms of Use</a>. Our site <a href="https://nimblelabs.io">nimblelabs.io</a> may have additional notices for web-only services.</p>
 
+    <!-- 3 -->
+    <h2><span class="num">3</span> Information we collect</h2>
+
+    <h3>3.1 You provide or it is created when you use the App</h3>
     <table class="data-table">
       <thead>
-        <tr>
-          <th>Category</th>
-          <th>Examples</th>
-          <th>How Collected</th>
-        </tr>
+        <tr><th>Category</th><th>Examples</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Account Information</strong></td>
-          <td>Name, email address, username, password (hashed), profile photo</td>
-          <td>Provided by you at sign-up or via OAuth (Apple, Google)</td>
+          <td><strong>Account &amp; profile</strong></td>
+          <td>If you sign in with Google: identifiers from your Google account (e.g. user ID, email, name, profile photo URL as made available by Google). You may edit your display name in the App; we may store name and fitness goal preferences in our backend (see below).</td>
         </tr>
         <tr>
-          <td><strong>Usage Analytics</strong></td>
-          <td>Features accessed, session duration, crash reports, device model, OS version, app version</td>
-          <td>Collected automatically when you use the app</td>
+          <td><strong>Workout content</strong></td>
+          <td>Workout names, tags, circuits, exercises, rest intervals, instructions, notes, and similar data you enter or generate.</td>
         </tr>
         <tr>
-          <td><strong>Location Data</strong></td>
-          <td>Approximate or precise GPS coordinates</td>
-          <td>Collected only with your explicit permission via device settings</td>
+          <td><strong>Media you attach</strong></td>
+          <td>Optional videos or references (e.g. device gallery, YouTube links) you associate with exercises.</td>
         </tr>
         <tr>
-          <td><strong>Technical Data</strong></td>
-          <td>IP address, device identifiers (IDFA/AAID), time zone, language settings</td>
-          <td>Collected automatically</td>
+          <td><strong>Support &amp; communications</strong></td>
+          <td>Information you send us if you contact support.</td>
         </tr>
       </tbody>
     </table>
 
-    <p>We do <strong>not</strong> collect payment information directly. Any in-app purchases are processed through Apple's App Store or Google Play, which have their own privacy policies.</p>
+    <h3>3.2 Automatically collected / technical</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Category</th><th>Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Device &amp; app data</strong></td>
+          <td>App version, platform (iOS/Android), general diagnostics, and operational logs as needed to run and secure the service.</td>
+        </tr>
+        <tr>
+          <td><strong>Identifiers</strong></td>
+          <td>Firebase/Google and Apple may assign or use technical identifiers to authenticate you, secure sessions, and measure product usage (see §5).</td>
+        </tr>
+        <tr>
+          <td><strong>Usage &amp; analytics</strong></td>
+          <td>Aggregated or pseudonymous analytics events (e.g. feature usage, session flows) where enabled, designed to avoid sending unnecessary personal data in event parameters.</td>
+        </tr>
+        <tr>
+          <td><strong>Purchase status</strong></td>
+          <td>Subscription entitlement and transaction metadata processed by Apple (on iOS) or Google Play (on Android) as required to provide Pro features. We do not receive your full payment card number from the stores.</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2><span class="num">3</span> How We Use Your Information</h2>
-    <p>We use the information we collect to:</p>
+    <h3>3.3 Optional features</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Feature</th><th>Data involved</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Smart / quick plan (AI)</strong></td>
+          <td>When you request an AI-assisted plan, your prompts and structured inputs may be sent to our AI provider (e.g. Google/Firebase AI) to generate a draft workout. A local fallback may run without sending content to the cloud when the AI path is unavailable.</td>
+        </tr>
+        <tr>
+          <td><strong>YouTube or embedded media</strong></td>
+          <td>Playing YouTube content is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. We do not control how YouTube processes data when you use their player.</td>
+        </tr>
+        <tr>
+          <td><strong>Health data (if you enable it)</strong></td>
+          <td>If you grant permission, Apple HealthKit (or the Android equivalent) may allow the App to read or write workout or health-related data as described in the system permission prompts and your device settings. We use such data only for the features you enable.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 4 -->
+    <h2><span class="num">4</span> How we use information</h2>
+    <p>We use information to:</p>
     <ul>
-      <li>Create and manage your account and authenticate your identity</li>
-      <li>Provide, personalize, and improve the app's features and functionality</li>
-      <li>Analyze usage trends to identify bugs, performance issues, and areas for improvement</li>
-      <li>Use location data to deliver location-aware features within the app (only when permission is granted)</li>
-      <li>Send important service notifications, such as security alerts or policy updates</li>
-      <li>Comply with applicable legal obligations</li>
+      <li>Create and maintain your account and sign you in.</li>
+      <li>Store and sync <strong>profile fields</strong> we host (e.g. name, fitness goal, sign-in provider) via <strong>Firebase / Firestore</strong>.</li>
+      <li>Store <strong>workout plans locally on your device</strong> (primary store for your plans in current versions).</li>
+      <li>Provide <strong>Smart plan</strong> and related features, including AI processing where applicable.</li>
+      <li>Operate <strong>subscriptions</strong> and free-tier limits (e.g. counting plan creations and completed workouts per calendar month in your local timezone).</li>
+      <li>Improve reliability, security, and product experience (including analytics and crash reporting where implemented).</li>
+      <li>Comply with law and enforce our <a href="https://nimblelabs.io/terms/">Terms of Use</a>.</li>
     </ul>
-    <p>We do <strong>not</strong> sell your personal information to third parties. We do not use your data to serve third-party advertisements.</p>
+    <p>We do <strong>not</strong> sell your personal information. We do not use your data to train third-party general-purpose AI models unless we clearly disclose a different practice in a future update.</p>
 
-    <h2><span class="num">4</span> Legal Basis for Processing</h2>
-    <p>Depending on your location, we rely on the following legal bases to process your personal information:</p>
+    <!-- 5 -->
+    <h2><span class="num">5</span> Third-party services</h2>
+    <p>The App relies on services that process data under their own terms and privacy policies, including:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Policy</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Google Sign-In / Google</strong></td>
+          <td>Authentication</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><strong>Firebase (Google)</strong></td>
+          <td>Authentication, cloud database (e.g. user profile fields), and related infrastructure</td>
+          <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase / Google Cloud terms</a></td>
+        </tr>
+        <tr>
+          <td><strong>Apple App Store</strong></td>
+          <td>App distribution, In-App Purchases, subscriptions</td>
+          <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><strong>Google Play</strong> (Android)</td>
+          <td>Distribution and billing</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+        </tr>
+        <tr>
+          <td><strong>AI / cloud APIs</strong> (e.g. Firebase AI / Gemini)</td>
+          <td>Optional workout drafting</td>
+          <td>Provider documentation and policies as updated</td>
+        </tr>
+        <tr>
+          <td><strong>YouTube / Google APIs</strong></td>
+          <td>Optional embedded or linked video</td>
+          <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We encourage you to read those policies. We are not responsible for third parties' independent practices.</p>
+
+    <!-- 6 -->
+    <h2><span class="num">6</span> Legal bases (EEA / UK users)</h2>
+    <p>If you are in the European Economic Area or United Kingdom, we process personal data on one or more of these bases:</p>
     <ul>
-      <li><strong>Contract performance</strong> — to provide you the service you signed up for</li>
-      <li><strong>Legitimate interests</strong> — to improve our app and prevent fraud</li>
-      <li><strong>Consent</strong> — for location data and optional communications (you can withdraw consent at any time)</li>
-      <li><strong>Legal obligation</strong> — where required by applicable law</li>
+      <li><strong>Contract:</strong> to provide the App and features you request.</li>
+      <li><strong>Legitimate interests:</strong> to secure the App, improve the product, and measure usage in a proportionate way, where not overridden by your rights.</li>
+      <li><strong>Consent:</strong> where required (e.g. certain analytics, marketing cookies on a website, or optional permissions such as HealthKit) — you may withdraw consent where applicable.</li>
+      <li><strong>Legal obligation:</strong> where we must retain or disclose information by law.</li>
     </ul>
 
-    <h2><span class="num">5</span> Data Sharing</h2>
-    <p>We share your data only in limited circumstances:</p>
+    <!-- 7 -->
+    <h2><span class="num">7</span> Retention</h2>
     <ul>
-      <li><strong>Service providers</strong> — trusted vendors who help us operate our app (e.g., cloud hosting, analytics, crash reporting). These providers are contractually bound to handle data securely and only for the purposes we specify.</li>
-      <li><strong>Legal requirements</strong> — if required by law, court order, or government authority.</li>
-      <li><strong>Business transfers</strong> — in the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you before your data becomes subject to a different privacy policy.</li>
+      <li><strong>Account / profile (Firestore):</strong> retained while your account is active and for a reasonable period afterward to resolve disputes, enforce terms, or as required by law.</li>
+      <li><strong>Workout plans:</strong> stored <strong>primarily on your device</strong>; uninstalling the App may delete local data unless the OS backs it up according to your device settings.</li>
+      <li><strong>Analytics / logs:</strong> retained for as long as needed for the purposes described above, typically in pseudonymous form and according to provider defaults.</li>
     </ul>
+    <p>You may request deletion of personal data we hold — see §9.</p>
 
-    <h2><span class="num">6</span> Location Data</h2>
-    <p>Location access is optional. The app will request permission before accessing your device's location. You can grant or revoke this permission at any time through your device's settings (iOS: Settings → Privacy → Location Services; Android: Settings → Apps → NimbleLabs → Permissions).</p>
-    <p>If you deny location permission, all other features of the app will continue to function normally.</p>
-
-    <h2><span class="num">7</span> Data Retention</h2>
-    <p>We retain your personal data for as long as your account is active or as needed to provide you with services. If you delete your account, we will delete or anonymize your personal information within <strong>30 days</strong>, except where we are required to retain it for legal or compliance purposes.</p>
-    <p>Aggregated, anonymized usage analytics may be retained indefinitely as they cannot be linked back to you.</p>
-
+    <!-- 8 -->
     <h2><span class="num">8</span> Security</h2>
-    <p>We implement industry-standard security measures to protect your data, including encryption in transit (TLS), encryption at rest, secure authentication practices, and access controls limiting who can view your data internally. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <p>We use reasonable technical and organizational measures appropriate to the nature of the data, including encryption in transit and access controls. No method of transmission or storage is 100% secure; we cannot guarantee absolute security. <strong>Nimble Labs LLC, its members, managers, and affiliates shall not be personally liable for any unauthorized access, breach, or loss of data beyond what is required by applicable law.</strong> If you believe a security incident has occurred, please notify us promptly at <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a>.</p>
 
-    <h2><span class="num">9</span> Children's Privacy</h2>
-    <p>NimbleLabs is not directed at children under the age of 13 (or 16 in the European Economic Area). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information without parental consent, please contact us at <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a> and we will promptly delete it.</p>
-
-    <h2><span class="num">10</span> Your Rights</h2>
-    <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+    <!-- 9 -->
+    <h2><span class="num">9</span> Your rights and choices</h2>
+    <p>Depending on where you live, you may have rights to:</p>
     <ul>
-      <li><strong>Access</strong> — request a copy of the data we hold about you</li>
-      <li><strong>Correction</strong> — request correction of inaccurate or incomplete data</li>
-      <li><strong>Deletion</strong> — request deletion of your personal data ("right to be forgotten")</li>
-      <li><strong>Portability</strong> — request your data in a portable format</li>
-      <li><strong>Opt-out</strong> — opt out of non-essential data collection or communications at any time</li>
-      <li><strong>Withdraw consent</strong> — withdraw previously granted consent (e.g., location access)</li>
+      <li><strong>Access</strong> personal data we hold about you.</li>
+      <li><strong>Correct</strong> inaccurate data.</li>
+      <li><strong>Delete</strong> certain data or your account (in-app account deletion may roll out in a future version; until then, contact us at <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a>).</li>
+      <li><strong>Object</strong> or <strong>restrict</strong> certain processing.</li>
+      <li><strong>Port</strong> data where applicable.</li>
+      <li><strong>Withdraw consent</strong> where processing is consent-based.</li>
+      <li><strong>Lodge a complaint</strong> with a supervisory authority.</li>
     </ul>
-    <p>To exercise any of these rights, please contact us at <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a>. We will respond within 30 days.</p>
+    <p><strong>iOS:</strong> Review permissions in <strong>Settings → BodyFlo</strong> and <strong>Settings → Privacy &amp; Security</strong>.<br />
+    <strong>Google account:</strong> Manage Google permissions at <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>.<br />
+    <strong>Subscriptions:</strong> Manage or cancel through Apple ID subscriptions or Google Play subscriptions.</p>
 
-    <h2><span class="num">11</span> Third-Party Links</h2>
-    <p>Our app or website may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party services. We encourage you to review the privacy policies of any third-party services you access.</p>
+    <!-- 10 -->
+    <h2><span class="num">10</span> Children</h2>
+    <p>The App is <strong>not directed at children under 13</strong> (or the minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you believe we have, contact us and we will delete it.</p>
 
-    <h2><span class="num">12</span> Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page and, where appropriate, notify you via email or an in-app notification. We encourage you to review this policy periodically.</p>
+    <!-- 11 -->
+    <h2><span class="num">11</span> International transfers</h2>
+    <p>If you use the App from outside the country where our servers or providers are located, your information may be processed in the <strong>United States</strong> or other countries where Google, Apple, or other processors operate. We use appropriate safeguards where required (e.g. standard contractual clauses).</p>
 
-    <h2><span class="num">13</span> Contact Us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a></li>
-      <li><strong>Website:</strong> <a href="https://nimblelabs.io">nimblelabs.io</a></li>
-    </ul>
+    <!-- 12 -->
+    <h2><span class="num">12</span> California (summary)</h2>
+    <p>California residents may have additional rights under the <strong>CCPA/CPRA</strong>, including to know, delete, and opt out of certain "sharing" or "sales" (we do not sell personal information as defined in those laws). Contact <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a> to exercise rights.</p>
+
+    <!-- 13 -->
+    <h2><span class="num">13</span> Changes</h2>
+    <p>We may update this Privacy Policy from time to time. We will post the updated version with a new effective date and, where appropriate, notify you in the App or by email.</p>
+
+    <!-- 14 -->
+    <h2><span class="num">14</span> Contact</h2>
+    <p>All privacy inquiries, rights requests, and legal notices must be directed to Nimble Labs LLC as the responsible legal entity — not to any individual. We do not accept service of legal process or regulatory notices through any channel other than those listed below.</p>
+    <p>
+      <strong>Entity:</strong> Nimble Labs LLC (California LLC)<br />
+      <strong>Email:</strong> <a href="mailto:help@nimblelabs.io">help@nimblelabs.io</a><br />
+      <strong>Privacy policy:</strong> <a href="https://nimblelabs.io/privacy/">nimblelabs.io/privacy</a><br />
+      <strong>Terms of Use:</strong> <a href="https://nimblelabs.io/terms/">nimblelabs.io/terms</a>
+    </p>
+
+    <div class="draft-note">
+      ⚠️ This is a draft aligned with the live policy URL above. Confirm the published page matches before App Store / in-app links go live. Have counsel review for your jurisdiction.
+    </div>
 
   </div>
 
   <footer>
-    <span>© 2026 NimbleLabs. All rights reserved.</span>
+    <span>© 2026 Nimble Labs LLC. All rights reserved.</span>
     <div class="footer-links">
       <a href="/privacy">Privacy Policy</a>
       <a href="/terms">Terms of Service</a>
