@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — NimbleLabs</title>
+  <meta name="description" content="NimbleLabs Terms of Service — the rules and guidelines for using our app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #6C47FF;
+      --brand-dark: #4B2ECC;
+      --brand-light: #EEE9FF;
+      --text: #0F0A1E;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #FAFAFA;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250,250,250,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--text); }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--brand); }
+
+    .page-hero {
+      background: linear-gradient(160deg, #F5F0FF 0%, #FAFAFA 100%);
+      padding: 64px 24px 48px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-hero .tag {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .page-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .page-hero .updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .content-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      flex: 1;
+    }
+
+    .intro-box {
+      background: var(--brand-light);
+      border-left: 4px solid var(--brand);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 48px;
+      font-size: 0.925rem;
+      line-height: 1.7;
+      color: #3B2F8C;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-top: 48px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      background: var(--brand);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 700;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #374151;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    ul li {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    .highlight-box {
+      background: #FFF9F0;
+      border: 1px solid #FBBF24;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0 20px;
+      font-size: 0.875rem;
+      line-height: 1.65;
+      color: #92400E;
+    }
+
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--brand); }
+    .footer-links { display: flex; gap: 20px; }
+
+    @media (max-width: 600px) {
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">Nimble<span>Labs</span></a>
+    <div class="nav-links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms" style="color: var(--brand);">Terms</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="tag">Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: April 19, 2026</p>
+  </div>
+
+  <div class="content-wrap">
+
+    <div class="intro-box">
+      Please read these Terms of Service carefully before using NimbleLabs. By downloading, installing, or using our app, you agree to be bound by these terms. If you do not agree, please do not use NimbleLabs.
+    </div>
+
+    <h2><span class="num">1</span> Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and NimbleLabs ("we," "us," or "our") governing your access to and use of the NimbleLabs mobile application (the "App") and website at <a href="https://nimblelabs.io">nimblelabs.io</a> (the "Site"), collectively referred to as the "Service."</p>
+    <p>By accessing or using the Service, you confirm that you are at least 13 years of age (or 16 in the European Economic Area), that you have read and understood these Terms, and that you agree to be bound by them.</p>
+
+    <h2><span class="num">2</span> Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. When we make changes, we will update the "Last updated" date at the top of this page and, where material changes are made, provide you with prominent notice (such as an in-app notification or email).</p>
+    <p>Your continued use of the Service after any changes take effect constitutes your acceptance of the updated Terms. If you disagree with any changes, you must stop using the Service.</p>
+
+    <h2><span class="num">3</span> Account Registration</h2>
+    <p>To access certain features of the App, you may be required to create an account. When creating an account, you agree to:</p>
+    <ul>
+      <li>Provide accurate, current, and complete information</li>
+      <li>Maintain and promptly update your account information</li>
+      <li>Keep your password confidential and not share it with third parties</li>
+      <li>Notify us immediately of any unauthorized access to or use of your account</li>
+      <li>Be responsible for all activity that occurs under your account</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate accounts that contain inaccurate information or that have been used in violation of these Terms.</p>
+
+    <h2><span class="num">4</span> Permitted Use</h2>
+    <p>Subject to these Terms, NimbleLabs grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App on a device you own or control, solely for your personal, non-commercial purposes.</p>
+
+    <h2><span class="num">5</span> Prohibited Activities</h2>
+    <p>You agree not to use the Service to:</p>
+    <ul>
+      <li>Violate any applicable law, regulation, or third-party rights</li>
+      <li>Engage in unauthorized access, hacking, or reverse engineering of the App</li>
+      <li>Transmit viruses, malware, or other harmful code</li>
+      <li>Scrape, crawl, or use automated means to access or collect data from the Service</li>
+      <li>Impersonate another person or entity, or misrepresent your affiliation</li>
+      <li>Post or transmit content that is unlawful, harassing, defamatory, obscene, or otherwise objectionable</li>
+      <li>Attempt to interfere with or disrupt the integrity or performance of the Service</li>
+      <li>Use the Service for any commercial purpose without our prior written consent</li>
+    </ul>
+    <p>Violation of these prohibitions may result in immediate termination of your account and access to the Service.</p>
+
+    <h2><span class="num">6</span> Intellectual Property</h2>
+    <p>The Service and all content, features, and functionality — including but not limited to text, graphics, logos, icons, audio, video, and software — are the exclusive property of NimbleLabs or its licensors and are protected by applicable intellectual property laws.</p>
+    <p>You may not copy, modify, distribute, sell, or lease any part of the Service or its content without our express written permission. You may not use our trademarks, logos, or brand features without prior written consent.</p>
+
+    <h2><span class="num">7</span> User Content</h2>
+    <p>If the Service allows you to submit, upload, or share content ("User Content"), you retain ownership of any intellectual property rights you hold in that content. By submitting User Content, you grant NimbleLabs a worldwide, royalty-free, non-exclusive license to use, host, store, reproduce, display, and distribute your User Content as necessary to provide and improve the Service.</p>
+    <p>You represent and warrant that you have all rights necessary to grant this license and that your User Content does not violate the rights of any third party.</p>
+
+    <h2><span class="num">8</span> In-App Purchases</h2>
+    <p>The App may offer in-app purchases or subscriptions. All purchases are processed through Apple's App Store or Google Play and are subject to their respective terms and refund policies. NimbleLabs does not directly handle payment information.</p>
+    <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel subscriptions in your App Store or Google Play account settings.</p>
+
+    <h2><span class="num">9</span> Privacy</h2>
+    <p>Your use of the Service is also governed by our <a href="/privacy">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.</p>
+
+    <h2><span class="num">10</span> Disclaimer of Warranties</h2>
+    <div class="highlight-box">
+      THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
+    </div>
+
+    <h2><span class="num">11</span> Limitation of Liability</h2>
+    <div class="highlight-box">
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NIMBLELABS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, PROFITS, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE SERVICE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY TO YOU SHALL NOT EXCEED THE GREATER OF $100 USD OR THE AMOUNT YOU PAID TO US IN THE PAST TWELVE MONTHS.
+    </div>
+
+    <h2><span class="num">12</span> Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless NimbleLabs and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses — including reasonable attorneys' fees — arising out of or in any way connected with your use of the Service, your User Content, or your violation of these Terms.</p>
+
+    <h2><span class="num">13</span> Termination</h2>
+    <p>We may suspend or terminate your access to the Service at any time, with or without cause, and with or without notice. You may terminate your account at any time by contacting us or using the account deletion feature in the App.</p>
+    <p>Upon termination, all licenses granted to you will immediately cease, and we may delete your account and data in accordance with our Privacy Policy.</p>
+
+    <h2><span class="num">14</span> Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Delaware, and you consent to personal jurisdiction in such courts.</p>
+
+    <h2><span class="num">15</span> Dispute Resolution</h2>
+    <p>Before filing a claim against NimbleLabs, you agree to try to resolve the dispute informally by contacting us at <a href="mailto:legal@nimblelabs.io">legal@nimblelabs.io</a>. We will try to resolve the dispute within 30 days. If the dispute is not resolved within 30 days, either party may proceed with formal legal proceedings.</p>
+
+    <h2><span class="num">16</span> Entire Agreement</h2>
+    <p>These Terms, together with our <a href="/privacy">Privacy Policy</a>, constitute the entire agreement between you and NimbleLabs regarding the Service and supersede all prior agreements and understandings, whether written or oral.</p>
+
+    <h2><span class="num">17</span> Contact Us</h2>
+    <p>If you have any questions about these Terms, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:legal@nimblelabs.io">legal@nimblelabs.io</a></li>
+      <li><strong>Website:</strong> <a href="https://nimblelabs.io">nimblelabs.io</a></li>
+    </ul>
+
+  </div>
+
+  <footer>
+    <span>© 2026 NimbleLabs. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="mailto:hello@nimblelabs.io">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
